@@ -339,68 +339,51 @@ export default function App() {
             <p className="text-stone-500">Zobacz jak przygotowujemy nasze pyszności</p>
           </div>
           
-          <div className="flex flex-wrap gap-8 justify-center items-start">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="rounded-3xl overflow-hidden shadow-2xl bg-stone-100 w-[267px] h-[476px]"
-            >
-              <iframe 
-                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1CDAESARJG%2F&show_text=false&width=267&t=0" 
-                width="267" 
-                height="476" 
-                style={{ border: 'none', overflow: 'hidden' }} 
-                scrolling="no" 
-                frameBorder="0" 
-                allowFullScreen={true} 
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                title="Facebook Reel 1"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="rounded-3xl overflow-hidden shadow-2xl bg-stone-100 w-[267px] h-[476px]"
-            >
-              <iframe 
-                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1B2na96NCu%2F&show_text=false&width=267&t=0" 
-                width="267" 
-                height="476" 
-                style={{ border: 'none', overflow: 'hidden' }} 
-                scrolling="no" 
-                frameBorder="0" 
-                allowFullScreen={true} 
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                title="Facebook Reel 2"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="rounded-3xl overflow-hidden shadow-2xl bg-stone-100 w-[267px] h-[476px]"
-            >
-              <iframe 
-                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1CbPB36sau%2F&show_text=false&width=267&t=0" 
-                width="267" 
-                height="476" 
-                style={{ border: 'none', overflow: 'hidden' }} 
-                scrolling="no" 
-                frameBorder="0" 
-                allowFullScreen={true} 
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                title="Facebook Reel 3"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </motion.div>
+          <div className="flex flex-wrap gap-10 justify-center items-start">
+            {[
+              { id: '1', url: "https://www.facebook.com/share/v/1CDAESARJG/", title: "Nasze Pierogi" },
+              { id: '2', url: "https://www.facebook.com/share/r/1B2na96NCu/", title: "Lepienie na żywo" },
+              { id: '3', url: "https://www.facebook.com/share/r/1CbPB36sau/", title: "Domowa kuchnia" }
+            ].map((reel, idx) => (
+              <motion.div 
+                key={reel.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="flex flex-col items-center gap-4"
+              >
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-stone-100 border border-stone-200 w-[280px] h-[500px]">
+                  {/* Invisible placeholder that shows if iframe fails or is blocked */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-stone-50 z-0">
+                    <Facebook className="text-stone-300 mb-4" size={48} />
+                    <p className="text-sm text-stone-400">Film z Facebooka</p>
+                  </div>
+                  
+                  <iframe 
+                    src={`https://www.facebook.com/plugins/video.php?height=500&href=${encodeURIComponent(reel.url)}&show_text=false&width=280&t=0`} 
+                    width="280" 
+                    height="500" 
+                    className="relative z-10 w-full h-full"
+                    style={{ border: 'none', overflow: 'hidden' }} 
+                    scrolling="no" 
+                    frameBorder="0" 
+                    allowFullScreen={true} 
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title={reel.title}
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <a 
+                  href={reel.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm font-bold text-[#e63946] hover:underline flex items-center gap-2"
+                >
+                  <Facebook size={14} /> Otwórz w aplikacji
+                </a>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
