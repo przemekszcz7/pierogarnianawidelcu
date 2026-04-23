@@ -341,9 +341,9 @@ export default function App() {
           
           <div className="flex flex-wrap gap-10 justify-center items-start">
             {[
-              { id: '1', url: "https://www.facebook.com/share/v/1CDAESARJG/", title: "Nasze Pierogi" },
-              { id: '2', url: "https://www.facebook.com/share/r/1B2na96NCu/", title: "Lepienie na żywo" },
-              { id: '3', url: "https://www.facebook.com/share/r/1CbPB36sau/", title: "Domowa kuchnia" }
+              { id: '1', url: "https://www.facebook.com/reel/876702771688730", title: "Nasze Pierogi" },
+              { id: '2', url: "https://www.facebook.com/share/r/1KzDYFoL1R/", title: "Lepienie na żywo" },
+              { id: '3', url: "https://www.facebook.com/reel/1955199395205222", title: "Domowa kuchnia" }
             ].map((reel, idx) => (
               <motion.div 
                 key={reel.id}
@@ -358,10 +358,11 @@ export default function App() {
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-stone-50 z-0">
                     <Facebook className="text-stone-300 mb-4" size={48} />
                     <p className="text-sm text-stone-400">Film z Facebooka</p>
+                    <p className="text-xs text-stone-300 mt-2">Jeśli film nie jest widoczny,<br/>kliknij poniżej</p>
                   </div>
                   
                   <iframe 
-                    src={`https://www.facebook.com/plugins/video.php?height=500&href=${encodeURIComponent(reel.url)}&show_text=false&width=280&t=0`} 
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(reel.url)}&show_text=false&width=280&t=0`} 
                     width="280" 
                     height="500" 
                     className="relative z-10 w-full h-full"
@@ -378,9 +379,9 @@ export default function App() {
                   href={reel.url} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-sm font-bold text-[#e63946] hover:underline flex items-center gap-2"
+                  className="text-sm font-bold text-[#e63946] hover:underline flex items-center gap-2 bg-stone-50 px-4 py-2 rounded-full border border-stone-200 shadow-sm"
                 >
-                  <Facebook size={14} /> Otwórz w aplikacji
+                  <Facebook size={14} /> Otwórz na Facebooku
                 </a>
               </motion.div>
             ))}
