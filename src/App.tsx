@@ -342,7 +342,7 @@ export default function App() {
           <div className="flex flex-wrap gap-10 justify-center items-start">
             {[
               { id: '1', url: "https://www.facebook.com/reel/876702771688730", title: "Nasze Pierogi" },
-              { id: '2', url: "https://www.facebook.com/share/r/1KzDYFoL1R/", title: "Lepienie na żywo" },
+              { id: '2', url: "https://www.facebook.com/61576909337741/videos/1496271058104622/", title: "Lepienie na żywo" },
               { id: '3', url: "https://www.facebook.com/reel/1955199395205222", title: "Domowa kuchnia" }
             ].map((reel, idx) => (
               <motion.div 
