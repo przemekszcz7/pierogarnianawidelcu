@@ -36,18 +36,18 @@ const MENU_ITEMS = {
 };
 
 const GALLERY_IMAGES = [
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/666273919_122164366868896977_5450748876972174567_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Ntshvw-O76EQ7kNvwGV5Io1&_nc_oc=AdoRr2Nr2Y1sbIbR77cySvSFaamSBCZHmmShwAbOwSu89E3xTIIPP86gOtECpSbFHXU&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=RWuQWUeLdaLMY4WDSLkdow&oh=00_Af3b8pumZmAsSL1ljjo4sBz1T16G_y9luQqmCXVKsX9C_Q&oe=69EF941B",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/645614765_122160615590896977_7089513113110387839_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=GI3zOE_Po-AQ7kNvwGhRSJ6&_nc_oc=AdqgAwcSfB7qSyK-TzfWjEDO5wYNl4dcpK30YNOKmXSxDQpZGOKcbKBklsN9qZz2AX4&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-2.xx&_nc_gid=PHEnMVEWmbICpUF9v_rdGw&oh=00_Af353cNR4xT7F7qBpfNvAxLkCQU9RZoPRthCKPZN0Pqifg&oe=69EFB6A3",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/641617960_122160008444896977_5243057087580369862_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=RA4-Efa2Ng4Q7kNvwFEQzPe&_nc_oc=Adp_DK478pzYfMU4XscA-aQqof5U1d8r5e0uXh75dgkbdGw9-35L8eU2oE75SZ6CwHc&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-2.xx&_nc_gid=eL1MbAK1GZhL27Lp2rarGQ&oh=00_Af2VxKPIXB5uzHYhkN_0sT2_EhXT7ZfJ22cy2UijS8ghGA&oe=69EFAF39",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/624880461_122156907242896977_611635476558241060_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=F-iT7TqQsycQ7kNvwG5ykSf&_nc_oc=Adrr2UHapW9TcL-BFC_Ay0mVky9FryxxEEqhFzOxfQGHY70fuI9Hj-8_ZSJkNDzz_7U&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-2.xx&_nc_gid=FuYbcSx8G4w2GzNdBQ3A6g&oh=00_Af12XRIh1YcHDOgrNMn4gBILa0WgaaSisOnLXRDjFRR-dQ&oe=69EF9834",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/623289277_122156570042896977_2937387856712318469_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=7Qh_MZmFp5YQ7kNvwFU9Khb&_nc_oc=Adp1hYRaTJz5ZyKUtF3cOwbL8UTtTyKLhU7_KG2yg3hmc7hSnTBpG0m1BFg09VbkqTI&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-1.xx&_nc_gid=ItTFzb768Rj-4DyoasDFKg&oh=00_Af3WRo3lPN8NlQAaDqTwAwKFOCB6FgXCo5_QjtA6_TSg6w&oe=69EFB40E",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/621814042_122156455580896977_1064227494312109082_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=V_fjrZyFExkQ7kNvwHBd89R&_nc_oc=AdoTavznQNNqlOIZGcIcAkfRJxl-HcBrj-QI_R6UeU6cChC5AyU9Wl9v6WFfApZfpxg&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-2.xx&_nc_gid=e2rYw0wmzGbpjH3C8NmvcQ&oh=00_Af1t8s8-9JwuJLwI6sskMioadJG6vMP_bKp5JYRvcf8sMg&oe=69EF9B71",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/556915502_122138651180896977_5695326214572579645_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=MqbNiCZzAy0Q7kNvwGu_ExD&_nc_oc=AdpBEDRkjfHSQSQjim5plEYc_EaAKHl77tA9RH8YQM6ipxVcJrSYtSSOtUnPJlbU_8o&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=raHVcCySF342zxnGVre0Mw&oh=00_Af1Eq3WxzHX1c57kBFMfE4K23q44uJoQl7w6ke7GKRf8xg&oe=69EF9927",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/557630906_122138457722896977_2694623455709225603_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UE7h9jONd6IQ7kNvwFZmhf-&_nc_oc=AdqN1t2OSl_2hqU6ZUPtxq6ykekkUJHu4-TIW574VHIGlHpAlESg51-5iqIp819udQs&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=3pJd-5Z7jQPJdfbJxxNrwg&oh=00_Af2VMeTvH85nUwZ7gU1UJMBQ1Y1g2EZAdu4HsWhnu-wS9g&oe=69EFB884",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/556817070_122138452916896977_774721579180766400_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=2jqjurEm94EQ7kNvwFTW53s&_nc_oc=AdohvU_SvBXC5CLTzZ3p5UE2SryYw_0-MxkEP1hwVHFPP51_EjypMJzXainiQvDCsnY&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=x4ieQYAi750KTD5JEXzBsA&oh=00_Af1A5Y0cib9WHvTFFZIdXYa3iytkx2P-1FQh-zrGJ2RsnQ&oe=69EF9D8C",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/547025254_122135460962896977_871662592641465060_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=hWBRXZHIZCwQ7kNvwHB9cUt&_nc_oc=Adro8STQkBwnLLwZ8W0n8gyD6g7MHi6f9FgO4936ud8rkLlOcijTM2D5aA_PVviZmpE&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=rOZQv-Tjz_StnL2212pxdA&oh=00_Af0-WNX3UCLpm7KvDhyOpPsz-okjFMYSOQek6DzegwXqoQ&oe=69EF8DAE",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/546644766_122134844462896977_5297364996822570903_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=u0TnHX_IbiEQ7kNvwGWwWyf&_nc_oc=Ador55dF18jyP-n4CilCj1UgEn5JTke7RC0NvcAkJEP7MK3AkDixTyTF9nfCXtwkp_o&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=Xz1TcB5ym8QsKqiUF--xzQ&oh=00_Af3WyxSbMrO8tx4kBa2XxRamnI3IJv4Mjwn_nynmFO_DQw&oe=69EF91F4",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/525757994_122125345784896977_341882764266807637_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Mz4aFAx3kGAQ7kNvwECmTaR&_nc_oc=Adof8ast3LOPJSqjWUxYhGfZunnH5rSPMuOO2sUMrZnAzOFdjIrLi3zqz8dYfgNS19g&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=iUt8YcVmM2WOiWF3wxpNJg&oh=00_Af2YcejMe6zdszsGhvldIZodcG73erYLiHFhXvj-xROVKQ&oe=69EF90D9"
+  "https://iili.io/BLYWiOP.png",
+  "https://iili.io/BLYWQzF.png",
+  "https://iili.io/BLYWvWu.png",
+  "https://iili.io/BLYWEVs.png",
+  "https://iili.io/BLYVyN9.png",
+  "https://iili.io/BLYWfSV.png",
+  "https://iili.io/BLYVm9S.png",
+  "https://iili.io/BLYWBHB.png",
+  "https://iili.io/BLYWAKv.png",
+  "https://iili.io/BLYWcNt.png",
+  "https://iili.io/BLYWGiG.png",
+  "https://iili.io/BLYWWl4.png"
 ];
 
 const FB_URL = "https://www.facebook.com/profile.php?id=61576909337741";
@@ -74,7 +74,7 @@ export default function App() {
         <div className="mx-auto max-w-7xl px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img 
-              src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/522640188_122124524516896977_2316736030540441471_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=6Lru9VtVoYIQ7kNvwGiAcwW&_nc_oc=AdoAvrXtGa450yI0ZTbUshYoPWf8hhYK09Gd9a54iKMszaMXcfdThmby0FYDmv45MhU&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=Ue7tqqS_HA6Q7pjnTm8peg&oh=00_Af0EIr0Slj1FsrBRqZnYPyMhqIfxbyHK7TSF2uEivveWeQ&oe=69EF9B17" 
+              src="https://iili.io/BLYWrUQ.png" 
               className="w-12 h-12 rounded-full border-2 border-[#e63946]"
               alt="Logo"
             />
@@ -138,7 +138,7 @@ export default function App() {
           >
             <div className="aspect-square rounded-[2rem] overflow-hidden shadow-2xl skew-y-2 transform hover:skew-y-0 transition-transform duration-700">
               <img 
-                src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/645614765_122160615590896977_7089513113110387839_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=GI3zOE_Po-AQ7kNvwGhRSJ6&_nc_oc=AdqgAwcSfB7qSyK-TzfWjEDO5wYNl4dcpK30YNOKmXSxDQpZGOKcbKBklsN9qZz2AX4&_nc_zt=23&se=-1&_nc_ht=scontent-waw2-2.xx&_nc_gid=PHEnMVEWmbICpUF9v_rdGw&oh=00_Af353cNR4xT7F7qBpfNvAxLkCQU9RZoPRthCKPZN0Pqifg&oe=69EFB6A3" 
+                src="https://iili.io/BLYWiOP.png" 
                 className="w-full h-full object-cover"
                 alt="Smaczne pierogi"
               />
@@ -169,7 +169,7 @@ export default function App() {
               className="order-2 md:order-1"
             >
               <img 
-                src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/555540249_122139240644896977_7050065221200656184_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0MdhjuztZqMQ7kNvwFIJhre&_nc_oc=AdqUVdTahuB7jmO90eGslNIEQb416M7_OQeu8CBrEboorurdCqcJeirulxgIN-6B-UA&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=CgflCbpZVrytVK7NOAnCQw&oh=00_Af1MiXciJuXU4o4dcNT9XWm_JqG-zssXI04_G0QnlggLbQ&oe=69EF88F7" 
+                src="https://iili.io/BLYWQzF.png" 
                 className="w-full rounded-3xl shadow-xl"
                 alt="O nas - Pierogarnia na widelcu"
               />
